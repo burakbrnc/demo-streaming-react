@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HedgeHogFlix</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import React from 'react'
+      import { createRoot } from 'react-dom/client'
+      const root = createRoot(document.getElementById('root'))
+
+      async function render() {
+        const route = location.hash.replace('#', '') || '/'
+        let Page, title
+        if (route === '/series') {
+          Page = (await import('/src/pages/Series.jsx')).default
+          title = 'Popular Series'
+        } else if (route === '/movies') {
+          Page = (await import('/src/pages/Movies.jsx')).default
+          title = 'Popular Movies'
+        } else {
+          Page = (await import('/src/pages/Home.jsx')).default
+          title = 'Popular Titles'
+        }
+        root.render(
+          React.createElement(React.StrictMode, null,
+            React.createElement(Page, { title })
+          )
+        )
+      }
+      window.addEventListener('hashchange', render)
+      render()
+    </script>
+  </body>
+</html>
