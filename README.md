@@ -7,6 +7,8 @@
     One CSS file and Vite’s asset URLs keep styling straightforward, 
     Clear, minimal, nothing extra.
 - Are there any improvements you could make to your submission?
-    I think I could've added a search feature and different 
+    I would add search and better filters, smooth out loading and error messages, improve accessibility 
+    and maybe add mobile layout, and add a few tests with a simple quality check.
 - What would you do differently if you were allocated more time?
-    Maybe adding animations and search bar would come to my mind 
+    I would replace hash routing with React Router, extract shared layout into components,
+    add search/filter in URL parameters and add simple page transition animations.
