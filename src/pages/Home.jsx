@@ -1,4 +1,4 @@
-// Bundle asset URLs so Vite includes them in dist
+import React from 'react'
 const facebookWhite = new URL('../../assets/social/facebook-white.svg', import.meta.url).href
 const twitterWhite = new URL('../../assets/social/twitter-white.svg', import.meta.url).href
 const instagramWhite = new URL('../../assets/social/instagram-white.svg', import.meta.url).href

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-// Bundle asset URLs so Vite includes them in dist
+
 const placeholderImg = new URL('../../assets/placeholder.png', import.meta.url).href
 const facebookWhite = new URL('../../assets/social/facebook-white.svg', import.meta.url).href
 const twitterWhite = new URL('../../assets/social/twitter-white.svg', import.meta.url).href

@@ -12,3 +12,5 @@
 - What would you do differently if you were allocated more time?
     I would replace hash routing with React Router, extract shared layout into components,
     add search/filter in URL parameters and add simple page transition animations.
+
+Vercell app: demo-streaming-react.vercel.app
