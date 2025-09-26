@@ -7,6 +7,6 @@
     One CSS file and Vite’s asset URLs keep styling straightforward, 
     Clear, minimal, nothing extra.
 - Are there any improvements you could make to your submission?
-    
+    I think I could've added a search feature and different 
 - What would you do differently if you were allocated more time?
     Maybe adding animations and search bar would come to my mind 
